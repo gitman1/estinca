@@ -8,12 +8,12 @@ html{color-scheme:dark;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inse
 body{margin:0}
 [hidden]{display:none!important}
 </style>
-<meta property="og:title" content="Estinca · EPK">
-<meta property="og:description" content="MC boom-bap din Satu Mare. Bio, video live, foto, afișe, booking.">
-<meta property="og:image" content="img/hero.jpg">
+<meta property="og:title" content="Estinca &amp; DJ Poison · EPK">
+<meta property="og:description" content="Boom-bap din Satu Mare: MC Estinca și DJ Poison. Bio, video live, foto, afișe, booking.">
+<meta property="og:image" content="img/header.jpg">
 <meta name="theme-color" content="#100f0d">
-<link rel="icon" href="img/hero.jpg">
-<title>Estinca EPK</title>
+<link rel="icon" href="img/header.jpg">
+<title>Estinca &amp; DJ Poison</title>
 <meta name="description" content="Estinca — MC boom-bap din nord-vestul României. Electronic press kit: bio, scenă, video live, foto, afișe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,9 +70,13 @@ html[data-l="en"] [lang="ro"]:not(html){display:none!important}
 @media (max-width:760px){.bar nav{display:none}.lang{margin-left:auto}}
 
 /* hero */
+.bar .logo .amp{color:var(--mustard)}
+.hero h1 .duo{display:flex;align-items:baseline;gap:.18em;font-size:.46em;line-height:1;margin-top:.12em;color:var(--paper)}
+.hero h1 .duo i{font:400 1.1em/1 var(--f-tag);color:var(--mustard);font-style:normal;text-transform:none}
+.photo{justify-self:end;width:100%;max-width:440px}
 .hero{position:relative;padding-block:clamp(28px,5vw,64px) 0}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
-.hero h1{font:400 clamp(72px,21vw,236px)/.82 var(--f-display);letter-spacing:-.01em;margin:0;text-transform:uppercase;color:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.75fr);gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font:400 clamp(64px,12.5vw,168px)/.84 var(--f-display);letter-spacing:-.01em;margin:0;text-transform:uppercase;color:var(--paper)}
 .hero h1 .mark{display:block;font:400 clamp(22px,3.2vw,38px)/1 var(--f-tag);color:var(--mustard);text-transform:none;transform:rotate(-4deg);margin:0 0 14px 6px}
 .kicker{font:400 14px/1.5 var(--f-type);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:22px 0 0}
 .kicker b{color:var(--paper);font-weight:400}
@@ -90,7 +94,8 @@ html[data-l="en"] [lang="ro"]:not(html){display:none!important}
 .sticker .s1{display:block;font:400 30px/1 var(--f-display);text-transform:uppercase}
 .sticker .s2{display:block;font:400 12px/1.3 var(--f-type);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
 .tape{position:absolute;z-index:2;top:-12px;right:18%;width:120px;height:30px;background:color-mix(in srgb,var(--paper) 55%,transparent);transform:rotate(4deg)}
-@media (max-width:820px){.hero-grid{grid-template-columns:1fr}.photo{order:-1;max-width:520px}.sticker{left:8px}}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr}.photo{order:2;justify-self:start;max-width:360px;margin-top:8px}.sticker{left:8px}}
+@media (max-width:520px){.bar .logo{font-size:20px}}
 
 /* marquee strip */
 .strip{margin-top:clamp(40px,6vw,72px);background:var(--mustard);color:var(--paper-ink);transform:rotate(-1.2deg);overflow:hidden;border-block:3px solid var(--paper-ink)}
@@ -203,15 +208,30 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 .lb .x{top:calc(14px + env(safe-area-inset-top,0px));right:14px}
 .lb .pv{left:14px;top:50%;transform:translateY(-50%)}
 .lb .nx{right:14px;top:50%;transform:translateY(-50%)}
+.vcard figcaption b span,.vcard figcaption .tag span{font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit}
+
+/* 3 questions */
+.qa{background:var(--paper);color:var(--paper-ink)}
+.qa-grid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.qa video{width:100%;aspect-ratio:9/16;background:#000;display:block;border:3px solid var(--paper-ink);box-shadow:8px 8px 0 var(--brick)}
+.qa .eyebrow{font:400 14px/1 var(--f-type);letter-spacing:.14em;text-transform:uppercase;color:var(--brick)}
+.qa h2{font:400 clamp(52px,8vw,108px)/.88 var(--f-display);text-transform:uppercase;margin:14px 0 0;text-wrap:balance}
+.qa h2 .n{color:var(--brick)}
+.qa p{max-width:46ch;margin:20px 0 0;font-size:18px}
+.qa .meta{font:400 13px/1.5 var(--f-type);letter-spacing:.08em;text-transform:uppercase;margin-top:22px;opacity:.75}
+.qa .btn{border-color:var(--paper-ink);margin-top:24px}
+.qa .btn.solid{background:var(--paper-ink);color:var(--paper)}
+@media (max-width:760px){.qa-grid{grid-template-columns:1fr}.qa video{max-width:320px}.qa-text{order:-1}}
 </style>
 </head>
 <body>
 
 <header class="bar">
   <div class="wrap">
-    <a class="logo" href="#top">ESTINCA</a>
+    <a class="logo" href="#top">ESTINCA <span class="amp">&amp;</span> DJ POISON</a>
     <nav aria-label="Secțiuni">
       <a href="#bio"><span lang="ro">Bio</span><span lang="en">Bio</span></a>
+      <a href="#intrebari"><span lang="ro">3 întrebări</span><span lang="en">3 questions</span></a>
       <a href="#scena"><span lang="ro">Scenă</span><span lang="en">Stage</span></a>
       <a href="#video">Video</a>
       <a href="#foto"><span lang="ro">Foto</span><span lang="en">Photos</span></a>
@@ -230,8 +250,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1><span class="mark">Satu Mare · RO</span>Estinca</h1>
-        <p class="kicker"><span lang="ro"><b>MC</b> · hip-hop boom-bap · live cu DJ Poison</span><span lang="en"><b>MC</b> · boom-bap hip-hop · live with DJ Poison</span></p>
+        <h1><span class="mark">Satu Mare · RO</span>Estinca<span class="duo"><i>&amp;</i>DJ Poison</span></h1>
+        <p class="kicker"><span lang="ro"><b>MC + DJ</b> · hip-hop boom-bap · show live</span><span lang="en"><b>MC + DJ</b> · boom-bap hip-hop · live show</span></p>
         <p class="lede">
           <span lang="ro">Rime pe beat-uri grele, freestyle și energie de cypher. Peste zece ani pe scenele din nord-vestul României.</span>
           <span lang="en">Rhymes over heavy drums, freestyle and cypher energy. Over ten years on the stages of north-west Romania.</span>
@@ -243,7 +263,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
       </div>
       <div class="photo">
         <span class="tape" aria-hidden="true"></span>
-        <div class="frame"><img src="img/hero.jpg" alt="Estinca la microfon, pe scena festivalului La Dâmburi" width="1600" height="1600"></div>
+        <div class="frame"><img src="img/header.jpg" alt="Estinca la microfon, cu șapcă albă, pe scena La Dâmburi" width="724" height="719"></div>
         <div class="sticker">
           <span class="s1"><span lang="ro">Locul 1</span><span lang="en">1st place</span></span>
           <span class="s2">King of the Hills · La Dâmburi 2014</span>
@@ -260,26 +280,43 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 
   <section id="bio">
     <div class="wrap">
-      <div class="label"><h2>Bio</h2><small>Estinca Norbert</small></div>
+      <div class="label"><h2>Bio</h2><small>Estinca &amp; DJ Poison</small></div>
       <div class="bio-grid">
         <div class="bio">
           <div lang="ro">
             <p>Estinca este un MC din nord-vestul României, cu rădăcinile în boom-bap-ul anilor ’90. S-a format pe scenele din Satu Mare și Baia Mare și urcă de peste un deceniu pe scenă alături de DJ Poison, cu un show construit pe rime, freestyle și energie de cypher.</p>
-            <p>În 2014 a câștigat locul 1 la concursul King of the Hills, din cadrul festivalului La Dâmburi din Satu Mare. De atunci a devenit un nume constant pe afișele seriei „Resuscitarea Hip-Hop-ului Românesc” și a împărțit scena cu Chimie (aka Mișu Foarfeca), Lord Lhus (SUA), El Patrone, Phunk B și Jim NTB.</p>
+            <p>În 2014 a câștigat locul 1 la concursul King of the Hills, din cadrul festivalului La Dâmburi din Satu Mare. De atunci a devenit un nume constant pe afișele seriei „Resuscitarea Hip-Hop-ului Românesc” și a cântat alături de nume grele ale hip-hop-ului românesc, precum Cedry2k, Sisu, Stres, Euphoric, SunetSacru, Bocaseca, RomaN, Macanache și Dilimanjaro, dar și cu Chimie (aka Mișu Foarfeca), Lord Lhus (SUA) și El Patrone.</p>
+            <p>Pe scenă nu e singur: DJ Poison e partenerul lui de show de peste zece ani. El se ocupă de beat-uri și de energia din spatele microfonului, iar împreună duc un set live de boom-bap clasic, cu MC și DJ, ca în anii ’90.</p>
           </div>
           <div lang="en">
             <p>Estinca is an MC from north-west Romania with his roots in 90s boom-bap. He came up on the stages of Satu Mare and Baia Mare and has been performing with DJ Poison for over a decade, in a show built on rhymes, freestyle and cypher energy.</p>
-            <p>In 2014 he took first place at the King of the Hills contest at La Dâmburi festival in Satu Mare. Since then he has been a regular on the “Resuscitarea Hip-Hop-ului Românesc” (Reviving Romanian Hip-Hop) series and has shared the stage with Chimie (aka Mișu Foarfeca), Lord Lhus (USA), El Patrone, Phunk B and Jim NTB.</p>
+            <p>In 2014 he took first place at the King of the Hills contest at La Dâmburi festival in Satu Mare. Since then he has been a regular on the “Resuscitarea Hip-Hop-ului Românesc” (Reviving Romanian Hip-Hop) series and has performed alongside heavyweights of Romanian hip-hop such as Cedry2k, Sisu, Stres, Euphoric, SunetSacru, Bocaseca, RomaN, Macanache and Dilimanjaro, as well as Chimie (aka Mișu Foarfeca), Lord Lhus (USA) and El Patrone.</p>
+            <p>He never works alone: DJ Poison has been his stage partner for over ten years. He runs the beats and the energy behind the mic, and together they deliver a classic MC-and-DJ boom-bap set, 90s style.</p>
           </div>
         </div>
         <dl class="facts">
-          <div><dt><span lang="ro">Nume</span><span lang="en">Name</span></dt><dd>Estinca Norbert</dd></div>
+          <div><dt>MC</dt><dd>Estinca <span style="color:var(--muted)">· Estinca Norbert</span></dd></div>
+          <div><dt>DJ</dt><dd>DJ Poison</dd></div>
           <div><dt><span lang="ro">Gen</span><span lang="en">Genre</span></dt><dd>Hip-hop · boom-bap</dd></div>
           <div><dt><span lang="ro">Din</span><span lang="en">From</span></dt><dd>Satu Mare, <span lang="ro">România</span><span lang="en">Romania</span></dd></div>
-          <div><dt><span lang="ro">Format live</span><span lang="en">Live setup</span></dt><dd><span lang="ro">MC + DJ (DJ Poison)</span><span lang="en">MC + DJ (DJ Poison)</span></dd></div>
+          <div><dt><span lang="ro">Format live</span><span lang="en">Live setup</span></dt><dd><span lang="ro">MC + DJ, set boom-bap</span><span lang="en">MC + DJ, boom-bap set</span></dd></div>
           <div><dt><span lang="ro">Premii</span><span lang="en">Awards</span></dt><dd><span lang="ro">Locul 1, King of the Hills, La Dâmburi 2014</span><span lang="en">1st place, King of the Hills, La Dâmburi 2014</span></dd></div>
           <div><dt><span lang="ro">Limbă</span><span lang="en">Language</span></dt><dd><span lang="ro">Română</span><span lang="en">Romanian</span></dd></div>
         </dl>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="intrebari" class="qa">
+    <div class="wrap qa-grid">
+      <div><video id="vqa" controls preload="none" playsinline poster="video/interviu.jpg"><source src="video/interviu.mp4" type="video/mp4"></video></div>
+      <div class="qa-text">
+        <span class="eyebrow"><span lang="ro">Video · Estinca vorbește</span><span lang="en">Video · Estinca speaks</span></span>
+        <h2><span lang="ro">Răspunsuri la <span class="n">3</span> întrebări</span><span lang="en">Answers to <span class="n">3</span> questions</span></h2>
+        <p><span lang="ro">Estinca răspunde la trei întrebări, direct la cameră.</span><span lang="en">Estinca answers three questions, straight to camera.</span></p>
+        <div class="meta"><span lang="ro">4:19 · în limba română · 2026</span><span lang="en">4:19 · in Romanian · 2026</span></div>
+        <a class="btn solid" href="#intrebari" id="qa-play"><span lang="ro">▶ Pornește video</span><span lang="en">▶ Play video</span></a>
       </div>
     </div>
   </section>
@@ -299,9 +336,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           </ol>
         </div>
         <div class="stage">
-          <h3><span lang="ro">A împărțit scena cu</span><span lang="en">Shared the stage with</span></h3>
+          <h3><span lang="ro">Alături de</span><span lang="en">Alongside</span></h3>
           <div class="names">
-            <span class="hl">Chimie</span><span class="hl">Lord Lhus (USA)</span><span class="hl">El Patrone</span><span>Phunk B</span><span>Carbon a.s. narcoBranco</span><span>Jim NTB</span><span>Col3a</span><span>Shushi Shu’ &amp; Cortex</span><span>Fentăm Terra</span><span>Scubi</span><span>Marinaru</span><span>Chirica</span><span>Manolescoo</span><span>DJ Muh’fucka</span><span>DJ Poison</span>
+            <span class="hl">Cedry2k</span><span class="hl">Sisu</span><span class="hl">Stres</span><span class="hl">Euphoric</span><span class="hl">SunetSacru</span><span class="hl">Bocaseca</span><span class="hl">RomaN</span><span class="hl">Macanache</span><span class="hl">Dilimanjaro</span><span>Chimie</span><span>Lord Lhus (USA)</span><span>El Patrone</span><span>Phunk B</span><span>Carbon a.s. narcoBranco</span><span>Jim NTB</span><span>Col3a</span><span>Shushi Shu’ &amp; Cortex</span><span>Fentăm Terra</span><span>Scubi</span><span>Marinaru</span><span>Chirica</span><span>Manolescoo</span><span>DJ Muh’fucka</span>
           </div>
           <p><span lang="ro">Festivaluri și serii: La Dâmburi (Satu Mare), Resuscitarea Hip-Hop-ului Românesc, Boom Bap Hip Hop Party.</span><span lang="en">Festivals and series: La Dâmburi (Satu Mare), Resuscitarea Hip-Hop-ului Românesc, Boom Bap Hip Hop Party.</span></p>
         </div>
@@ -311,15 +348,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 
   <section id="video">
     <div class="wrap">
-      <div class="label"><h2>Video</h2><small>Live · freestyle · <span lang="ro">interviu</span><span lang="en">interview</span></small></div>
+      <div class="label"><h2>Video</h2><small>Live · freestyle · declansART</small></div>
       <div class="vid-feature">
         <figure class="vcard">
           <video id="v1" controls preload="none" playsinline poster="video/toate-s-bune-live.jpg"><source src="video/toate-s-bune-live.mp4" type="video/mp4"></video>
           <figcaption><b>Toate-s bune</b><span>Live · La Dâmburi, Satu Mare</span></figcaption>
         </figure>
-        <figure class="vcard tall">
-          <video id="v2" controls preload="none" playsinline poster="video/interviu.jpg"><source src="video/interviu.mp4" type="video/mp4"></video>
-          <figcaption><b><span lang="ro">Întrebări &amp; răspunsuri</span><span lang="en">Q&amp;A</span></b><span><span lang="ro">Interviu · 2026 · în română</span><span lang="en">Interview · 2026 · in Romanian</span></span></figcaption>
+        <figure class="vcard">
+          <video id="v2" controls preload="none" playsinline poster="video/podcast-1.jpg"><source src="video/podcast-1.mp4" type="video/mp4"></video>
+          <figcaption><b>declansART</b><span><span lang="ro">Sesiune live în studio</span><span lang="en">Live studio session</span></span></figcaption>
         </figure>
       </div>
       <div class="vid-row">
@@ -336,7 +373,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
           <figcaption><b>Live</b><span><span lang="ro">decembrie 2023</span><span lang="en">December 2023</span></span></figcaption>
         </figure>
       </div>
-      <div class="cta" style="margin-top:clamp(24px,3vw,36px)"><a class="btn solid" href="/portofoliu"><span lang="ro">Toate clipurile (8) →</span><span lang="en">All clips (8) →</span></a></div>
+      <div class="cta" style="margin-top:clamp(24px,3vw,36px)"><a class="btn solid" href="/portofoliu"><span lang="ro">Toate clipurile →</span><span lang="en">All clips →</span></a></div>
     </div>
   </section>
 
@@ -461,6 +498,7 @@ cEl.addEventListener('click', async e=>{
   catch(err){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r) }
 });
 
+document.getElementById('qa-play').addEventListener('click',e=>{e.preventDefault();const v=document.getElementById('vqa');v.scrollIntoView({behavior:'smooth',block:'center'});v.play().catch(()=>{})});
 /* one video at a time */
 const vids=[...document.querySelectorAll('video')];
 vids.forEach(v=>v.addEventListener('play',()=>vids.forEach(o=>{if(o!==v)o.pause()})));
